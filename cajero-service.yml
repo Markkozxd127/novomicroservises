@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8864}
+  port: ${PORT:8872}
 message: Configuracion de cliente en el servidor levantado!
 spring:
   datasource:
