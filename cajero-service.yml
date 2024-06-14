@@ -4,7 +4,7 @@ server:
   port: ${PORT:8883}  ### Configura el puerto del servidor, usando el valor de PORT si está definido, de lo contrario usa 8883 por defecto.
 
 ### Mensaje de configuración general
-message: Configuracion de cliente en el servidor levantado!
+message: Configuracion de cajero en el servidor levantado!
 
 ### Configuración de la base de datos MySQL
 spring:
