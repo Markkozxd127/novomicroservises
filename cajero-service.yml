@@ -1,21 +1,13 @@
-### Configuración del servidor Spring Boot para el microservicio
-
 server:
-  port: ${PORT:8883}  ### Configura el puerto del servidor, usando el valor de PORT si está definido, de lo contrario usa 8883 por defecto.
-
-### Mensaje de configuración general
-message: Configuracion de cajero en el servidor levantado!
-
-### Configuración de la base de datos MySQL
+  port: ${PORT:8883}
+message: Configuracion de cliente en el servidor levantado!
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver  ### Clase del controlador JDBC para MySQL.
-    url: jdbc:mysql://localhost:3306/zetazeta?serverTimezone=UTC  ### URL de conexión a la base de datos MySQL con la zona horaria UTC.
-    username: root  ### Usuario de la base de datos MySQL.
-    password: 12345678  ### Contraseña del usuario de la base de datos MySQL.
-
-### Configuración de JPA y Hibernate
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zetazeta?serverTimezone=UTC
+    username: root
+    password: 12345678
   jpa:
     hibernate:
-      ddl-auto: update  ### Actualiza automáticamente la estructura de la base de datos según las entidades definidas.
-      database-platform: org.hibernate.dialect.MySQLDialect  ### Plataforma de base de datos utilizada por Hibernate para MySQL.
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQLDialect
